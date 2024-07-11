@@ -2,10 +2,6 @@
 
 # Plenn.er:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2396c5a5-9467-4ea6-935a-de00a473fbdc/bd4df6a6-d577-413c-a6f0-5fae5969ff29/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2396c5a5-9467-4ea6-935a-de00a473fbdc/44ed3847-9ada-49c5-995d-d9a174d56ce8/Untitled.png)
-
 **Spring Initializr:**  ajuda na criação do springBoot
 
 **Repository:**  fazem a comunicação com o banco de dados
@@ -15,10 +11,6 @@
 # Inicialização do projeto
 
 Acessar o Spring initializr: https://start.spring.io/
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2396c5a5-9467-4ea6-935a-de00a473fbdc/65304c27-4503-43d8-9b12-42d66f74fa08/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2396c5a5-9467-4ea6-935a-de00a473fbdc/d0d0652b-70c2-4ab1-80d4-3d5408b980b4/Untitled.png)
 
 **Atifact:** planner → nome do projeto
 
