@@ -105,3 +105,18 @@ no **@RequestBody →** passamos uma classe que ele deve pegar, então criamos u
 Ele tenta encontrar um id dentro do meu trip, caso ele encontre ele monta uma reposta do tipo ResponseEntity no meu body, com status ok, caso ele não encontre ele vai mostrar com status não encontrado
 
 @PutMapping → é usado para modificar/atualizar um recurso onde o cliente envia dados que atualizam todo o recurso.
+
+# NLW JOURNEY Parte 2
+
+bEndPoints são, **put, get, post, delete…**
+`@GetMapping("/{id/confirm}")` → usamos esses dois tipos quando na mesma classe ja tem duas anotações @GetMapping
+
+Dentro da classe ParticipantService, fizemos alguns ajustes
+
+`public void registerParticipantToEvent(List<String> participantToInvite, Trip trip){    List<Participant> participants = participantToInvite.stream().map(email -> new Participant(email, **trip**)).toList();    repository.saveAll(participants);}`
+
+Ou seja, criamos uma Lista de participantes na qual os emails foram enviados, transformamos ela em stream, pegamos tudo pelo map, pegando os emails e assim criando um novo participant, e transformando ela novamente em uma lista
+
+Tivemos também que alterar a classe Participant, fazendo um novo construtor passando os parâmetros necessários
+
+**OBS:** sempre depois de alguma alteração feita, fazer teste para ver se a aplicação ainda estão em funcionamento
