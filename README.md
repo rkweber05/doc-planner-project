@@ -120,3 +120,20 @@ Ou seja, criamos uma Lista de participantes na qual os emails foram enviados, tr
 Tivemos também que alterar a classe Participant, fazendo um novo construtor passando os parâmetros necessários
 
 **OBS:** sempre depois de alguma alteração feita, fazer teste para ver se a aplicação ainda estão em funcionamento
+
+# NLW JOURNEY Parte 3
+
+**ON DELETE CASCADE**, dentro do banco de dados que colocamos dentro de db.migration = quando fazemos referência a outra tabela, estamos dizendo que quando está tabela que estamos fazendo referência for excluída, a tabela filha será excluída também.
+
+**Ou seja,** `trip_id UUID,FOREIGN KEY (trip_id) REFERENCES trips(id) ON DELETE CASCADE`
+
+**Record =** apenas para transferência de dados, não vai ser mudado o valor, pegando um valor do banco de dados, montando ele, e retornando em um objeto
+
+**Desafios extras para fazer / Features extras**
+
+- adicionar uma validação nos campos de data
+    - Se a data de começo da viagem é inferior a data de término da viagem (TripRequestPayload)
+    - A data de uma atividade esta entre as datas da viagem, se não estiver mandar um erro
+- Extração do core das trips para dentro de uma classe Service
+- Mapeamento das exeções da nossa apliacaçõa
+    - Com trativas de erro
